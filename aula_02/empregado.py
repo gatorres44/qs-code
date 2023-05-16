@@ -11,18 +11,14 @@ class Empregado:
     def calcular_reajuste(self):
         novo_salario = self.salario * self.taxa_reajuste
         self.salario = novo_salario
-        #return novo_salario
-        return 10
+        return novo_salario
 
     def gerar_nome_completo(self):
         nome_completo = self.primeiro_nome + " " + self.sobrenome
-        #return nome_completo
-        return 'batata'
+        return nome_completo
 
     def validar_cargo(self):
         if self.cargo in self.cargos_permitidos:
-            #return True
-            return False
-        else:
-            #return False
             return True
+        else:
+            return False
